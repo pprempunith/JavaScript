@@ -74,3 +74,30 @@ function add(num1, num2) {
     function calculator(num1, num2, operator) {
     return operator(num1, num2);
     }
+
+    // House keeper code
+
+    var houseKeeper1 = {
+        yearsOfExperience:12,
+        name:"Jane",
+        languages:["French","English"]
+    }
+    undefined
+    alert("hello"+houseKeeper1.name);
+
+    // Constuctor function
+
+    function HouseKeeper (yearsOfExperience, name,languages)    {
+        this.yearsOfExperience = yearsOfExperience;
+        this.name = name;
+        this.languages = languages;
+        this.clean = function (){
+            alert("cleaning in progress!!");                
+        }
+    }
+
+    var houseKeeper1 = new HouseKeeper(5, "Rich" , ["French","English"]);
+
+    console.log("hello i am " + houseKeeper1.name + " i have worked for "+ houseKeeper1.yearsOfExperience + "years ");
+
+
